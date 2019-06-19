@@ -5,4 +5,5 @@ Extract to home directory
 Rename
 
 * vim -> .vim
+* tmux -> .tmux
 
