@@ -1,0 +1,1 @@
+/home/vadim/.zfunc/zsh-master/dracula.zsh-theme
