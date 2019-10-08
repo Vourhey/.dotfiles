@@ -7,7 +7,8 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="dracula"
+# ZSH_THEME="dracula"
+ZSH_THEME="fwalch"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -61,11 +62,16 @@ ZSH_THEME="dracula"
 plugins=(
   git
   colorize
+  extract
   command-not-found
   cp
   npm
   zsh-autosuggestions
   zsh-syntax-highlighting
+  web-search
+  yarn
+  sudo
+  pass
 )
 
 plugins+=(zsh-nvm)
@@ -100,6 +106,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vim=nvim
+
+alias lncli-alice="lncli --rpcserver=localhost:10001 --macaroonpath=$GOPATH/dev/alice/data/chain/bitcoin/simnet/admin.macaroon"
+alias lncli-bob="lncli --rpcserver=localhost:10002 --macaroonpath=/home/vadim/go/dev/bob/data/chain/bitcoin/simnet/admin.macaroon"
+alias lncli-charlie="lncli --rpcserver=localhost:10003 --macaroonpath=/home/vadim/go/dev/charlie/data/chain/bitcoin/simnet/admin.macaroon"
+alias cal="cal -A 2"
 
 fpath+=~/.zfunc
 
